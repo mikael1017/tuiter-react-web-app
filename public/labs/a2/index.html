@@ -5,6 +5,13 @@
     <title>Title</title>
   </head>
   <body>
+    <h2>Table of content</h2>
+    <ul>
+      <li><a href="#embedding-website">Embedding other websites</a></li>
+      <li><a href="#embedding-youtube">Embedding Youtube videos</a></li>
+      <li><a href="#embedding-slides">Embedding Google slides</a></li>
+    </ul>
+
     <h1>HTML Examples</h1>
 
     <h2>Heading Tags</h2>
@@ -252,8 +259,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
     Checkout my <a href="other-page.html">other page</a>
 
+    <a name="embedding-website"></a>
+    <h2>Embedding other website</h2>
     <iframe width="600" height="400" src="https://www.op.gg/"> </iframe>
+    <br />
+    <a href="#top">Top</a>
 
+    <a name="embedding-youtube"></a>
     <h2>Embedding YouTube</h2>
     <iframe
       width="560"
@@ -264,7 +276,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
+    <br />
+    <a href="#top">Top</a>
 
+    <a name="embedding-slides"></a>
+    <h2>Embedding Google slides</h2>
     <iframe
       src="https://docs.google.com/presentation/d/e/2PACX-1vSQgGSrd_FV0-Knj0NYExvIPRjYt__tcoW7f3Uz-0kNsCIUQWgJeMacpVd-8O1oqQ2oAaUBsYvBMB-h/embed?start=true&loop=false&delayms=3000"
       frameborder="0"
@@ -274,5 +290,39 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       mozallowfullscreen="true"
       webkitallowfullscreen="true"
     ></iframe>
+    <br />
+    <a href="#top">Top</a>
+
+    <h2>Drawing rectangles</h2>
+
+    <svg width="300" height="100">
+      <rect
+        width="300"
+        height="100"
+        style="fill: rgb(0, 0, 255); stroke-width: 10; stroke: lime"
+      />
+    </svg>
+
+    <h2>Drawing circles</h2>
+
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        stroke-width="4"
+        fill="red"
+      />
+    </svg>
+
+    <h2>Drawing polygons</h2>
+
+    <svg width="300" height="200">
+      <polygon
+        points="100,10 40,198 190,78 10,78 160,198"
+        style="fill: red; stroke: purple; stroke-width: 5; fill-rule: evenodd"
+      />
+    </svg>
   </body>
 </html>
