@@ -1,0 +1,58 @@
+.wd-rounded-corners-all-around {
+  border-radius: 50px;
+}
+.wd-content {
+  margin-left: 16px;
+}
+
+body {
+  background-color: black;
+}
+.wd-border-color {
+  color: rgb(47, 51, 54);
+}
+
+.wd-fg-color-white {
+  color: white;
+}
+
+.wd-bg-color-gray {
+  background-color: darkgray;
+}
+
+#search {
+  border-radius: 50px;
+  width: 90%;
+  height: 30px;
+}
+
+.wd-content {
+  margin-left: 16px;
+}
+
+.wd-tab {
+  color: rgb(110, 118, 125);
+  font-size: 15px;
+  padding: 16px;
+  float: left;
+}
+.wd-grid-row {
+  float: left;
+}
+.wd-tab#selected-tab {
+  color: rgb(29, 161, 242);
+}
+.wd-settings {
+  position: absolute;
+  right: 12px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+li {
+  float: left;
+  margin: 0;
+  padding: 16px;
+}
