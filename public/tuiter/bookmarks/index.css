@@ -1,0 +1,70 @@
+.wd-title {
+  color: white;
+  font-size: 20px;
+}
+
+.wd-title-author {
+  color: lightgray;
+  font-size: 13px;
+}
+
+.wd-pl {
+  padding-left: 16px;
+}
+
+.wd-pb {
+  padding-bottom: 12px;
+}
+
+.wd-profile-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.wd-post-author-name {
+  color: white;
+}
+
+.wd-post-author-handle {
+  color: lightgray;
+}
+
+.wd-font-size-15 {
+  font-size: 15px;
+}
+.wd-post-container {
+  display: flex;
+}
+
+.wd-post-img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.wd-post-main,
+.wd-post-img-info {
+  max-width: 506px;
+}
+.wd-lightgray {
+  color: lightgray;
+}
+.wd-bold {
+  font-weight: bold;
+}
+.wd-info {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.wd-thin-border {
+  border-width: 1px;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+.wd-post-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.wd-num {
+  padding-left: 12px;
+}

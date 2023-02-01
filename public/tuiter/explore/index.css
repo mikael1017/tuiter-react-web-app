@@ -2,9 +2,6 @@
   border-radius: 50px;
 }
 
-body {
-  background-color: black;
-}
 .wd-border {
   border-style: solid;
   color: rgb(47, 51, 54);
@@ -63,25 +60,13 @@ body {
 .wd-post-img {
   border-radius: 20px;
 }
-.wd-post-c {
-}
 .wd-post-d {
   display: flex;
 }
 .wd-post-e {
   display: flex;
 }
-.wd-container {
-  border-width: 0px 2px 2px 2px;
-  border-color: rgb(47, 51, 54);
-  border-style: solid;
-}
 
-.wd-post-border {
-  border-width: 0px 0px 2px 0px;
-  border-color: rgb(47, 51, 54);
-  border-style: solid;
-}
 .wd-search-container {
   display: flex;
 }

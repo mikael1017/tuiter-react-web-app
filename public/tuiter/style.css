@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+}
+.wd-container {
+  border-width: 0px 2px 2px 2px;
+  border-color: rgb(47, 51, 54);
+  border-style: solid;
+}
+.wd-post-border {
+  border-width: 0px 0px 2px 0px;
+  border-color: rgb(47, 51, 54);
+  border-style: solid;
+}
+
+.wd-white {
+  color: white;
+}
+
+.wd-red {
+  color: red;
+}
