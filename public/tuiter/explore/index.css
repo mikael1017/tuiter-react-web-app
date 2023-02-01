@@ -1,14 +1,12 @@
 .wd-rounded-corners-all-around {
   border-radius: 50px;
 }
-.wd-content {
-  margin-left: 16px;
-}
 
 body {
   background-color: black;
 }
-.wd-border-color {
+.wd-border {
+  border-style: solid;
   color: rgb(47, 51, 54);
 }
 
@@ -22,11 +20,10 @@ body {
 
 #search {
   border-radius: 50px;
-  width: 90%;
   height: 30px;
 }
 
-.wd-content {
+.wd-ml-16 {
   margin-left: 16px;
 }
 
@@ -36,23 +33,72 @@ body {
   padding: 16px;
   float: left;
 }
+.wd-search {
+  display: flex;
+}
+
 .wd-grid-row {
-  float: left;
+  display: flex;
+  justify-content: space-evenly;
 }
 .wd-tab#selected-tab {
   color: rgb(29, 161, 242);
 }
-.wd-settings {
-  position: absolute;
-  right: 12px;
+.wd-pl {
+  padding-left: 16px;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
+.wd-topic {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
 }
 
-li {
-  float: left;
-  margin: 0;
-  padding: 16px;
+.wd-title {
+  color: white;
+  font-size: 16px;
+}
+.wd-author {
+  color: white;
+  font-size: 13px;
+}
+.wd-post-img {
+  border-radius: 20px;
+}
+.wd-post-c {
+}
+.wd-post-d {
+  display: flex;
+}
+.wd-post-e {
+  display: flex;
+}
+.wd-container {
+  border-width: 0px 2px 2px 2px;
+  border-color: rgb(47, 51, 54);
+  border-style: solid;
+}
+
+.wd-post-border {
+  border-width: 0px 0px 2px 0px;
+  border-color: rgb(47, 51, 54);
+  border-style: solid;
+}
+.wd-search-container {
+  display: flex;
+}
+.wd-search-col,
+.wd-post-col1 {
+  flex-grow: 2;
+}
+.wd-width-90 {
+  width: 90%;
+}
+
+.wd-settings {
+  padding-right: 12px;
+}
+.wd-post-img {
+  padding-right: 16px;
+}
+.wd-pt {
+  padding-top: 6px;
 }

@@ -8,23 +8,87 @@
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="wd-search">
-      <input
-        type="text"
-        class="wd-bg-color-gray wd-fg-color-white"
-        placeholder="Search Twitter"
-        id="search"
-      />
-      <a href="explore-settings.html" class="wd-settings">settings</a>
+    <div class="wd-container">
+      <div class="wd-search-container wd-pl">
+        <div class="wd-search-col">
+          <input
+            type="text"
+            class="wd-bg-color-gray wd-fg-color-white wd-pl wd-width-90"
+            placeholder="Search Twitter"
+            id="search"
+          />
+        </div>
+        <div class="wd-setting-col">
+          <a href="explore-settings.html" class="wd-settings">settings</a>
+        </div>
+      </div>
+      <div class="wd-grid-row wd-pl">
+        <a href="" class="wd-tab" id="selected-tab">For you</a>
+        <a href="" class="wd-tab">Trending</a>
+        <a href="" class="wd-tab">COVID-19</a>
+        <a href="" class="wd-tab">News</a>
+        <a href="" class="wd-tab">Sports</a>
+        <a href="" class="wd-tab">Entertainment</a>
+      </div>
+      <div class="wd-border"></div>
+      <div class="wd-post-container">
+        <div class="wd-post-c wd-post-border wd-pl wd-pt">
+          <div class="wd-topic">Sports Trending</div>
+          <div class="wd-title">Manchester United</div>
+          <div class="wd-topic">12.13M Tweets</div>
+        </div>
+        <div class="wd-post-c wd-post-border wd-pl wd-pt">
+          <div class="wd-topic">Sports Trending</div>
+          <div class="wd-title">Seattle Seahawks</div>
+          <div class="wd-topic">431K Tweets</div>
+        </div>
+        <div class="wd-post-d wd-post-border wd-pl wd-pt">
+          <div class="wd-post-col1">
+            <div class="wd-author">The New York Times</div>
+            <div class="wd-title">
+              NY Giants lose to the Eagles in NFL playoffs
+            </div>
+          </div>
+          <div class="wd-post-col2">
+            <img
+              class="wd-post-img"
+              src="post1.webp"
+              height="100px"
+              width="100px"
+            />
+          </div>
+        </div>
+        <div class="wd-post-d wd-post-border wd-pl wd-pt">
+          <div class="wd-post-col1">
+            <div class="wd-author">BBC</div>
+            <div class="wd-title">Manchester United wins champions league</div>
+          </div>
+          <div class="wd-post-col2">
+            <img
+              class="wd-post-img"
+              src="post2.jpeg"
+              height="100px"
+              width="100px"
+            />
+          </div>
+        </div>
+        <div class="wd-post-e wd-post-border wd-pl wd-pt">
+          <div class="wd-post-col1">
+            <div class="wd-topic">Australian Open</div>
+            <div class="wd-title">
+              Breaking News! Australian Open: Djokovic wins another title
+            </div>
+          </div>
+          <div class="wd-post-col2">
+            <img
+              class="wd-post-img"
+              src="post3.webp"
+              height="100px"
+              width="100px"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="wd-grid-row">
-      <a href="" class="wd-tab" id="selected-tab">For you</a>
-      <a href="" class="wd-tab">Trending</a>
-      <a href="" class="wd-tab">COVID-19</a>
-      <a href="" class="wd-tab">News</a>
-      <a href="" class="wd-tab">Sports</a>
-      <a href="" class="wd-tab">Entertainment</a>
-    </div>
-    <div class="wd-post"></div>
   </body>
 </html>
