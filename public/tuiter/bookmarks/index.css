@@ -41,9 +41,8 @@
   border-radius: 10px 10px 0px 0px;
 }
 
-.wd-post-main,
-.wd-post-img-info {
-  max-width: 506px;
+.wd-container {
+  max-width: 554px;
 }
 .wd-lightgray {
   color: lightgray;
