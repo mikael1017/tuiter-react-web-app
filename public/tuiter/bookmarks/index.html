@@ -16,14 +16,16 @@
     />
   </head>
   <body>
-    <div class="wd-container">
-      <div class="wd-title-container wd-pl wd-pb wd-post-border">
+    <div class="wd-container wd-pr-16">
+      <div
+        class="wd-title-container wd-pl wd-pt wd-pb wd-white wd-border-rightdown"
+      >
         <div class="wd-title">Bookmarks</div>
         <div class="wd-title-author">@WebDev</div>
       </div>
 
       <div class="wd-post-container">
-        <div class="wd-profile-pic">
+        <div class="wd-profile-pic wd-pt wd-pl wd-border-bot">
           <img
             class="wd-profile-img"
             src="profile1.jpeg"
@@ -31,8 +33,8 @@
             width="100px"
           />
         </div>
-        <div class="wd-post-contents">
-          <div class="wd-post-info">
+        <div class="wd-post-contents wd-pl wd-pt wd-pr-16 wd-border-rightdown">
+          <div class="wd-post-info wd-max-width">
             <span class="wd-post-author-name wd-font-size-15"
               >Robert Zubrin</span
             >
@@ -40,7 +42,7 @@
               @robert_zubrin - Jul 31
             </span>
           </div>
-          <div class="wd-post-main wd-white wd-font-size-15">
+          <div class="wd-post-main wd-white wd-font-size-15 wd-max-width">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               tristique, metus eget blandit faucibus, est risus ultrices velit,
@@ -51,7 +53,7 @@
               vestibulum vel massa. In hac habitasse platea dictumst.
             </p>
           </div>
-          <div class="wd-post-img">
+          <div class="wd-post-img wd-max-width wd-mt-12">
             <img
               class="wd-post-img wd-thin-border"
               src="post1.jpeg"
@@ -59,7 +61,7 @@
               height="264px"
             />
           </div>
-          <div class="wd-post-img-info wd-info wd-thin-border">
+          <div class="wd-post-img-info wd-info wd-thin-border wd-max-width-480">
             <div class="wd-white wd-font-size-15 wd-bold">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit...
             </div>
@@ -69,7 +71,7 @@
               in dignissim elit lectus at quam.
             </div>
           </div>
-          <div class="wd-post-icons wd-white">
+          <div class="wd-post-icons wd-white wd-max-width wd-pt wd-mt-12 wd-pb">
             <div>
               <i class="fa-regular fa-comment"></i>
               <span class="wd-num">22</span>
@@ -78,9 +80,8 @@
               <i class="fa-solid fa-retweet"></i> <span class="wd-num">9</span>
             </div>
             <!-- red -->
-            <div>
-              <i class="fa-solid fa-heart wd-red"></i
-              ><span class="wd-num">37</span>
+            <div class="wd-red">
+              <i class="fa-solid fa-heart"></i><span class="wd-num">37</span>
             </div>
 
             <div><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
@@ -89,14 +90,67 @@
         </div>
       </div>
 
-      <div class="wd-post">
-        <div class="wd-profile-pic"></div>
-        <div class="wd-post-contents">
-          <div class="wd-post-info"></div>
-          <div class="wd-post-main"></div>
-          <div class="wd-post-img"></div>
-          <div class="wd-post-img-info"></div>
-          <div class="wd-post-icons"></div>
+      <div class="wd-post-container">
+        <div class="wd-profile-pic wd-pt wd-pl wd-border-bot">
+          <img
+            class="wd-profile-img"
+            src="profile2.webp"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div class="wd-post-contents wd-pl wd-pt wd-pr-16 wd-border-rightdown">
+          <div class="wd-post-info wd-max-width">
+            <span class="wd-post-author-name wd-font-size-15">Jaewoo Cho</span>
+            <span class="wd-post-author-handle wd-font-size-15">
+              @jay_cho - Jul 28
+            </span>
+          </div>
+          <div class="wd-post-main wd-white wd-font-size-15 wd-max-width">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tristique, metus eget blandit faucibus, est risus ultrices velit,
+              in dignissim elit lectus at quam. Morbi malesuada pharetra libero,
+              non ultrices erat volutpat sit amet. In consequat porta arcu ac
+              consequat. Nunc et faucibus nunc. Curabitur vel semper ante. Proin
+              eu nisi orci. Nunc augue sapien, vulputate a ultrices eget,
+              vestibulum vel massa. In hac habitasse platea dictumst.
+            </p>
+          </div>
+          <div class="wd-post-img wd-max-width wd-mt-12">
+            <img
+              class="wd-post-img wd-thin-border"
+              src="post2.jpg"
+              width="504px"
+              height="264px"
+            />
+          </div>
+          <div class="wd-post-img-info wd-info wd-thin-border wd-max-width-480">
+            <div class="wd-white wd-font-size-15 wd-bold">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </div>
+            <div class="wd-lightgray wd-font-size-15">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed
+              tristique, metus eget blandit faucibus, est risus ultrices velit,
+              in dignissim elit lectus at quam.
+            </div>
+          </div>
+          <div class="wd-post-icons wd-white wd-max-width wd-pt wd-mt-12 wd-pb">
+            <div>
+              <i class="fa-regular fa-comment"></i>
+              <span class="wd-num">92</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-retweet"></i> <span class="wd-num">25</span>
+            </div>
+            <!-- red -->
+            <div class="wd-red">
+              <i class="fa-solid fa-heart"></i><span class="wd-num">1,512</span>
+            </div>
+
+            <div><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+            <div></div>
+          </div>
         </div>
       </div>
     </div>

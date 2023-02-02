@@ -1,15 +1,26 @@
 .wd-title {
-  color: white;
   font-size: 20px;
+}
+.wd-mt-12 {
+  margin-top: 12px;
 }
 
 .wd-title-author {
-  color: lightgray;
   font-size: 13px;
+  color: lightgray;
 }
-
+.wd-pr-16 {
+  padding-right: 16px;
+}
 .wd-pl {
   padding-left: 16px;
+}
+.wd-pl-12 {
+  padding-left: 12px;
+}
+
+.wd-pt {
+  padding-top: 12px;
 }
 
 .wd-pb {
@@ -40,9 +51,19 @@
 .wd-post-img {
   border-radius: 10px 10px 0px 0px;
 }
+.wd-post-img-info {
+  padding: 12px;
+}
 
-.wd-container {
-  max-width: 554px;
+.wd-title-container {
+  width: 586px;
+}
+.wd-max-width {
+  max-width: 506px;
+}
+
+.wd-max-width-480 {
+  max-width: 480px;
 }
 .wd-lightgray {
   color: lightgray;

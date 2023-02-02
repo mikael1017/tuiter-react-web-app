@@ -87,3 +87,9 @@
 .wd-pt {
   padding-top: 6px;
 }
+
+.wd-post-border {
+  border-width: 0px 0px 2px 0px;
+  border-color: rgb(47, 51, 54);
+  border-style: solid;
+}
