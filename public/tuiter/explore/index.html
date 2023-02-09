@@ -4,89 +4,278 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Explore</title>
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link href="index.css" rel="stylesheet" />
-    <link href="../style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="wd-container">
-      <div class="wd-search-container wd-pl">
-        <div class="wd-search-col">
-          <input
-            type="text"
-            class="wd-bg-color-gray wd-fg-color-white wd-pl wd-width-90"
-            placeholder="Search Twitter"
-            id="search"
-          />
-        </div>
-        <div class="wd-setting-col">
-          <a href="explore-settings.html" class="wd-settings">settings</a>
-        </div>
+    <div class="row">
+      <div class="col-xxl-2 list-group">
+        <a class="list-group-item list-group-item-action text-black" href="#">
+          <i class="fab fa-brands fa-twitter"></i>
+        </a>
+        <a class="list-group-item list-group-item-action text-black" href="#">
+          <i class="fas fa-home"></i>Home
+        </a>
+        <a
+          class="list-group-item list-group-item-action active text-black"
+          href="#"
+        >
+          <i class="fas fa-hashtag"></i>Explore
+        </a>
+        <a class="list-group-item list-group-item-action text-black" href="#">
+          <i class="fas fa-bell"></i>Notifications
+        </a>
+        <a class="list-group-item list-group-item-action text-black" href="#">
+          <i class="fas fa-envelope"></i>Messages
+        </a>
+        <a class="list-group-item list-group-item-action text-black" href="#">
+          <i class="fas fa-bookmark"></i>Bookmarks
+        </a>
+        <a class="list-group-item list-group-item-action text-black" href="#">
+          <i class="fas fa-bookmark"></i>Lists
+        </a>
+        <a class="list-group-item list-group-item-action text-black" href="#">
+          <i class="fas fa-user"></i>Profile
+        </a>
+        <a class="list-group-item list-group-item-action text-black" href="#">
+          <i class="fas fa-circle-ellipsis"></i>More
+        </a>
       </div>
-      <div class="wd-grid-row wd-pl">
-        <a href="" class="wd-tab" id="selected-tab">For you</a>
-        <a href="" class="wd-tab">Trending</a>
-        <a href="" class="wd-tab">COVID-19</a>
-        <a href="" class="wd-tab">News</a>
-        <a href="" class="wd-tab">Sports</a>
-        <a href="" class="wd-tab">Entertainment</a>
-      </div>
-      <div class="wd-border"></div>
-      <div class="wd-post-container">
-        <div class="wd-post-c wd-post-border wd-pl wd-pt">
-          <div class="wd-topic">Sports Trending</div>
-          <div class="wd-title">Manchester United</div>
-          <div class="wd-topic">12.13M Tweets</div>
-        </div>
-        <div class="wd-post-c wd-post-border wd-pl wd-pt">
-          <div class="wd-topic">Sports Trending</div>
-          <div class="wd-title">Seattle Seahawks</div>
-          <div class="wd-topic">431K Tweets</div>
-        </div>
-        <div class="wd-post-d wd-post-border wd-pl wd-pt">
-          <div class="wd-post-col1">
-            <div class="wd-author">The New York Times</div>
-            <div class="wd-title">
-              NY Giants lose to the Eagles in NFL playoffs
+      <div class="col-xxl-6">
+        <div class="search-bar-container row">
+          <div class="col-xxl-11">
+            <div class="input-group">
+              <div class="input-group-text wd-rounded-border-left">
+                <i class="fas fa-search"></i>
+              </div>
+              <input
+                type="text"
+                class="form-control wd-rounded-border-right"
+                placeholder="Search Twitter"
+              />
             </div>
           </div>
-          <div class="wd-post-col2">
-            <img
-              class="wd-post-img"
-              src="post1.webp"
-              height="100px"
-              width="100px"
-            />
+          <div class="col-xxl-1">
+            <i class="fas fa-cog fa-2xl align-text-bottom"></i>
           </div>
         </div>
-        <div class="wd-post-d wd-post-border wd-pl wd-pt">
-          <div class="wd-post-col1">
-            <div class="wd-author">BBC</div>
-            <div class="wd-title">Manchester United wins champions league</div>
-          </div>
-          <div class="wd-post-col2">
-            <img
-              class="wd-post-img"
-              src="post2.jpeg"
-              height="100px"
-              width="100px"
-            />
-          </div>
+        <div class="navbar-container">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">For you</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entertainment</a>
+            </li>
+          </ul>
         </div>
-        <div class="wd-post-e wd-post-border wd-pl wd-pt">
-          <div class="wd-post-col1">
-            <div class="wd-topic">Australian Open</div>
-            <div class="wd-title">
-              Breaking News! Australian Open: Djokovic wins another title
+        <div class="main-poster-container position-relative">
+          <img src="../../images/poster.jpeg" class="img-fluid" />
+          <h2 class="left-0 bottom-0 position-absolute text-white">
+            SpaceX's Starship
+          </h2>
+        </div>
+        <div class="recent-post-container">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xxl-10"></div>
+                <div class="col-xxl-2">
+                  <img
+                    src="../../images/react.png"
+                    width="100px"
+                    height="100px"
+                    class="rounded-3"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xxl-10"></div>
+                <div class="col-xxl-2">
+                  <img
+                    src="../../images/js.png"
+                    width="100px"
+                    height="100px"
+                    class="rounded-3"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xxl-10"></div>
+                <div class="col-xxl-2">
+                  <img
+                    src="../../images/jquery.png"
+                    width="100px"
+                    height="100px"
+                    class="rounded-3"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xxl-10"></div>
+                <div class="col-xxl-2">
+                  <img
+                    src="../../images/node.png"
+                    width="100px"
+                    height="100px"
+                    class="rounded-3"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xxl-4 list-group">
+        <div class="list-group-item fw-bold">Who to follow</div>
+        <div class="list-group-item">
+          <div class="row">
+            <div class="image-parent col-xxl-2">
+              <img
+                src="../../images/java.png"
+                width="50px"
+                height="50px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col">
+              <div class="info">
+                <div class="fw-bold">
+                  Java <i class="fas fa-circle-check"></i>
+                </div>
+                <div class="handle">@Java</div>
+              </div>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
             </div>
           </div>
-          <div class="wd-post-col2">
-            <img
-              class="wd-post-img"
-              src="post3.webp"
-              height="100px"
-              width="100px"
-            />
+        </div>
+        <div class="list-group-item">
+          <div class="row">
+            <div class="image-parent col-xxl-2">
+              <img
+                src="../../images/relativity.jpeg"
+                width="50px"
+                height="50px"
+                class="rounded-circle"
+              />
+            </div>
+
+            <div class="col">
+              <div class="info">
+                <div class="fw-bold">
+                  Relativity Space <i class="fas fa-circle-check"></i>
+                </div>
+                <div class="handle">@relativityspace</div>
+              </div>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="row">
+            <div class="image-parent col-xxl-2">
+              <img
+                src="../../images/virgin.svg"
+                width="50px"
+                height="50px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col">
+              <div class="info">
+                <div class="fw-bold">
+                  Virgin Galactic <i class="fas fa-circle-check"></i>
+                </div>
+                <div class="handle">@virgingalactic</div>
+              </div>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="row">
+            <div class="image-parent col-xxl-2">
+              <img
+                src="../../images/nasa.jpeg"
+                width="50px"
+                height="50px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col">
+              <div class="info">
+                <div class="fw-bold">
+                  NASA <i class="fas fa-circle-check"></i>
+                </div>
+                <div class="handle">@NASA</div>
+              </div>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="row">
+            <div class="image-parent col-xxl-2">
+              <img
+                src="../../images/tesla.png"
+                width="50px"
+                height="50px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col">
+              <div class="info">
+                <div class="fw-bold">
+                  Tesla <i class="fas fa-circle-check"></i>
+                </div>
+                <div class="handle">@Tesla</div>
+              </div>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
+            </div>
           </div>
         </div>
       </div>

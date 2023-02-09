@@ -1,95 +1,19 @@
-.wd-rounded-corners-all-around {
-  border-radius: 50px;
+.wd-rounded-border-left {
+  border-bottom-left-radius: 25rem !important;
+  border-top-left-radius: 25rem !important;
 }
-
-.wd-border {
-  border-style: solid;
-  color: rgb(47, 51, 54);
+.wd-rounded-border-right {
+  border-bottom-right-radius: 25rem !important;
+  border-top-right-radius: 25rem !important;
 }
-
-.wd-fg-color-white {
-  color: white;
+.input-group-text {
+  background-color: white;
 }
-
-.wd-bg-color-gray {
-  background-color: darkgray;
+.main-poster-container img {
+  width: 100%;
+  height: 100%;
 }
-
-#search {
-  border-radius: 50px;
-  height: 30px;
-}
-
-.wd-ml-16 {
-  margin-left: 16px;
-}
-
-.wd-tab {
-  color: rgb(110, 118, 125);
-  font-size: 15px;
-  padding: 16px;
-  float: left;
-}
-.wd-search {
-  display: flex;
-}
-
-.wd-grid-row {
-  display: flex;
-  justify-content: space-evenly;
-}
-.wd-tab#selected-tab {
-  color: rgb(29, 161, 242);
-}
-.wd-pl {
-  padding-left: 16px;
-}
-.wd-topic {
-  font-size: 13px;
-  color: rgb(110, 118, 125);
-}
-
-.wd-title {
-  color: white;
-  font-size: 16px;
-}
-.wd-author {
-  color: white;
-  font-size: 13px;
-}
-.wd-post-img {
-  border-radius: 20px;
-}
-.wd-post-d {
-  display: flex;
-}
-.wd-post-e {
-  display: flex;
-}
-
-.wd-search-container {
-  display: flex;
-}
-.wd-search-col,
-.wd-post-col1 {
-  flex-grow: 2;
-}
-.wd-width-90 {
-  width: 90%;
-}
-
-.wd-settings {
-  padding-right: 12px;
-}
-.wd-post-img {
-  padding-right: 16px;
-}
-.wd-pt {
-  padding-top: 6px;
-}
-
-.wd-post-border {
-  border-width: 0px 0px 2px 0px;
-  border-color: rgb(47, 51, 54);
-  border-style: solid;
+.wd-bottom-left {
+  top: 100%;
+  left: 10%;
 }
