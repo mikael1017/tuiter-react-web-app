@@ -1,5 +1,6 @@
 .wd-twitter-blue,
-.fa-circle-check {
+.fa-circle-check,
+.wd-show-more {
   color: rgb(29, 155, 240);
 }
 
@@ -36,7 +37,7 @@
   font-weight: 700;
   border-bottom: 4px solid;
   border-color: rgb(29, 155, 240);
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 body {
@@ -52,4 +53,13 @@ body {
   padding-right: 0;
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+a:hover {
+  background-color: rgb(232, 244, 248);
+  border-radius: 5px;
+}
+
+.wd-show-more {
+  text-decoration: none;
 }
