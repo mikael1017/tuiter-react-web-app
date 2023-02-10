@@ -11,47 +11,65 @@
     />
     <link href="index.css" rel="stylesheet" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="row">
-      <div class="col-xxl-2 list-group">
-        <a class="list-group-item list-group-item-action text-black" href="#">
-          <i class="fab fa-brands fa-twitter"></i>
-        </a>
-        <a class="list-group-item list-group-item-action text-black" href="#">
-          <i class="fas fa-home"></i>Home
-        </a>
-        <a
-          class="list-group-item list-group-item-action active text-black"
-          href="#"
-        >
-          <i class="fas fa-hashtag"></i>Explore
-        </a>
-        <a class="list-group-item list-group-item-action text-black" href="#">
-          <i class="fas fa-bell"></i>Notifications
-        </a>
-        <a class="list-group-item list-group-item-action text-black" href="#">
-          <i class="fas fa-envelope"></i>Messages
-        </a>
-        <a class="list-group-item list-group-item-action text-black" href="#">
-          <i class="fas fa-bookmark"></i>Bookmarks
-        </a>
-        <a class="list-group-item list-group-item-action text-black" href="#">
-          <i class="fas fa-bookmark"></i>Lists
-        </a>
-        <a class="list-group-item list-group-item-action text-black" href="#">
-          <i class="fas fa-user"></i>Profile
-        </a>
-        <a class="list-group-item list-group-item-action text-black" href="#">
-          <i class="fas fa-circle-ellipsis"></i>More
-        </a>
+      <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 ps-4 pt-2 pe-0">
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action text-black" href="#">
+            <i class="fab fa-brands fa-twitter"></i>
+          </a>
+          <a class="list-group-item list-group-item-action text-black" href="#">
+            <i class="fas fa-home pe-2 float-start"></i>
+            <span class="d-none d-xl-block">Home</span>
+          </a>
+          <a
+            class="list-group-item list-group-item-action active text-black"
+            href="#"
+          >
+            <i class="fas fa-hashtag pe-2 float-start"></i>
+            <span class="d-none d-xl-block">Explore</span>
+          </a>
+          <a class="list-group-item list-group-item-action text-black" href="#">
+            <i class="fas fa-bell pe-2 float-start"></i>
+            <span class="d-none d-xl-block">Notifications</span>
+          </a>
+          <a class="list-group-item list-group-item-action text-black" href="#">
+            <i class="fas fa-envelope pe-2 float-start"></i>
+            <span class="d-none d-xl-block">Messages</span>
+          </a>
+          <a class="list-group-item list-group-item-action text-black" href="#">
+            <i class="fas fa-bookmark pe-2 float-start"></i>
+            <span class="d-none d-xl-block">Bookmarks</span>
+          </a>
+          <a class="list-group-item list-group-item-action text-black" href="#">
+            <i class="fas fa-list pe-2 float-start"></i>
+            <span class="d-none d-xl-block">Lists</span>
+          </a>
+          <a class="list-group-item list-group-item-action text-black" href="#">
+            <i class="fas fa-user pe-2 float-start"></i>
+            <span class="d-none d-xl-block">Profile</span>
+          </a>
+          <a class="list-group-item list-group-item-action text-black" href="#">
+            <i class="fas fa-angles-right pe-2 float-start"></i>
+            <span class="d-none d-xl-block">More</span>
+          </a>
+        </div>
+        <div class="tuit-button-container d-block pt-2">
+          <button
+            type="submit"
+            class="tuit-button btn btn-primary rounded-pill"
+          >
+            Tweet
+          </button>
+        </div>
       </div>
-      <div class="col-xxl-6">
+      <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-9 col-sm-9 pt-2">
         <div class="search-bar-container row">
-          <div class="col-xxl-11">
+          <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-sm-11">
             <div class="input-group">
               <div class="input-group-text wd-rounded-border-left">
                 <i class="fas fa-search"></i>
@@ -63,31 +81,35 @@
               />
             </div>
           </div>
-          <div class="col-xxl-1">
-            <i class="fas fa-cog fa-2xl align-text-bottom"></i>
+          <div
+            class="col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 align-self-center"
+          >
+            <i class="fas fa-cog fa-2xl"></i>
           </div>
         </div>
-        <div class="navbar-container">
+        <div class="navbar-container pt-2">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active" href="#">For you</a>
+              <a class="nav-link active" href="../for-you.html">For you</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trending</a>
+              <a class="nav-link" href="../trending.html">Trending</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="../news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sports</a>
+              <a class="nav-link" href="../sports.html">Sports</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Entertainment</a>
+              <a class="nav-link d-none d-md-block" href="../entertainment.html"
+                >Entertainment</a
+              >
             </li>
           </ul>
         </div>
-        <div class="main-poster-container position-relative">
-          <img src="../../images/poster.jpeg" class="img-fluid" />
+        <div class="main-poster-container position-relative pt-2">
+          <img src="../../images/poster.jpeg" class="img-fluid h-100 w-100" />
           <h2 class="left-0 bottom-0 position-absolute text-white">
             SpaceX's Starship
           </h2>
@@ -95,53 +117,83 @@
         <div class="recent-post-container">
           <ul class="list-group">
             <li class="list-group-item">
-              <div class="row">
-                <div class="col-xxl-10"></div>
-                <div class="col-xxl-2">
+              <div class="row px-2">
+                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                  <div class="topic text-secondary">Web Development</div>
+                  <div class="name fw-bold">
+                    ReactJS <i class="fas fa-circle-check"></i>
+                    <span class="text-secondary fw-normal">- 2h</span>
+                  </div>
+                  <div class="desc fw-bold">
+                    React.js is a component based front end library that makes
+                    it very easy to build Single Page Applications or SPAs
+                  </div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ps-0">
                   <img
                     src="../../images/react.png"
                     width="100px"
                     height="100px"
-                    class="rounded-3"
+                    class="rounded-3 align-self-center h-100 w-100"
                   />
                 </div>
               </div>
             </li>
             <li class="list-group-item">
-              <div class="row">
-                <div class="col-xxl-10"></div>
-                <div class="col-xxl-2">
+              <div class="row px-2">
+                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                  <div class="name fw-bold">
+                    JavaScript <i class="fas fa-circle-check"></i>
+                    <span class="text-secondary fw-normal">- 2h</span>
+                  </div>
+                  <div class="desc fw-bold">
+                    JavaScript is programming language that can run on browsers
+                    as well as desktops
+                  </div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ps-0">
                   <img
                     src="../../images/js.png"
                     width="100px"
                     height="100px"
-                    class="rounded-3"
+                    class="rounded-3 align-self-center h-100 w-100"
                   />
                 </div>
               </div>
             </li>
             <li class="list-group-item">
-              <div class="row">
-                <div class="col-xxl-10"></div>
-                <div class="col-xxl-2">
+              <div class="row px-2">
+                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                  <div class="topic text-secondary">Web Development</div>
+                  <div class="name fw-bold">jQuery</div>
+                  <div class="num-tweets text-secondary">123K Tweets</div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ps-0">
                   <img
                     src="../../images/jquery.png"
                     width="100px"
                     height="100px"
-                    class="rounded-3"
+                    class="rounded-3 align-self-center h-100 w-100"
                   />
                 </div>
               </div>
             </li>
             <li class="list-group-item">
-              <div class="row">
-                <div class="col-xxl-10"></div>
-                <div class="col-xxl-2">
+              <div class="row px-2">
+                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                  <div class="topic text-secondary">Web Development</div>
+                  <div class="name fw-bold">
+                    NodeJS <i class="fas fa-circle-check"></i>
+                    <span class="text-secondary fw-normal">- 2h</span>
+                  </div>
+                  <div class="num-tweets text-secondary">123K Tweets</div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ps-0">
                   <img
                     src="../../images/node.png"
                     width="100px"
                     height="100px"
-                    class="rounded-3"
+                    class="rounded-3 align-self-center h-100 w-100"
                   />
                 </div>
               </div>
@@ -150,11 +202,13 @@
         </div>
       </div>
 
-      <div class="col-xxl-4 list-group">
+      <div
+        class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block list-group pt-2 pe-5"
+      >
         <div class="list-group-item fw-bold">Who to follow</div>
         <div class="list-group-item">
           <div class="row">
-            <div class="image-parent col-xxl-2">
+            <div class="image-parent col-xxl-2 col-xl-2 col-lg-2">
               <img
                 src="../../images/java.png"
                 width="50px"
@@ -170,8 +224,11 @@
                 <div class="handle">@Java</div>
               </div>
             </div>
-            <div class="col">
-              <button type="submit" class="btn btn-primary rounded-pill">
+            <div class="col align-self-center">
+              <button
+                type="submit"
+                class="btn btn-primary rounded-pill float-end"
+              >
                 Follow
               </button>
             </div>
@@ -179,7 +236,7 @@
         </div>
         <div class="list-group-item">
           <div class="row">
-            <div class="image-parent col-xxl-2">
+            <div class="image-parent col-xxl-2 col-xl-2 col-lg-2">
               <img
                 src="../../images/relativity.jpeg"
                 width="50px"
@@ -190,14 +247,17 @@
 
             <div class="col">
               <div class="info">
-                <div class="fw-bold">
+                <div class="fw-bold text-nowrap overflow-visible">
                   Relativity Space <i class="fas fa-circle-check"></i>
                 </div>
                 <div class="handle">@relativityspace</div>
               </div>
             </div>
-            <div class="col">
-              <button type="submit" class="btn btn-primary rounded-pill">
+            <div class="col align-self-center position-absolute">
+              <button
+                type="submit"
+                class="btn btn-primary rounded-pill float-end"
+              >
                 Follow
               </button>
             </div>
@@ -205,7 +265,7 @@
         </div>
         <div class="list-group-item">
           <div class="row">
-            <div class="image-parent col-xxl-2">
+            <div class="image-parent col-xxl-2 col-xl-2 col-lg-2">
               <img
                 src="../../images/virgin.svg"
                 width="50px"
@@ -221,8 +281,11 @@
                 <div class="handle">@virgingalactic</div>
               </div>
             </div>
-            <div class="col">
-              <button type="submit" class="btn btn-primary rounded-pill">
+            <div class="col align-self-center">
+              <button
+                type="submit"
+                class="btn btn-primary rounded-pill float-end"
+              >
                 Follow
               </button>
             </div>
@@ -230,7 +293,7 @@
         </div>
         <div class="list-group-item">
           <div class="row">
-            <div class="image-parent col-xxl-2">
+            <div class="image-parent col-xxl-2 col-xl-2 col-lg-2">
               <img
                 src="../../images/nasa.jpeg"
                 width="50px"
@@ -246,8 +309,11 @@
                 <div class="handle">@NASA</div>
               </div>
             </div>
-            <div class="col">
-              <button type="submit" class="btn btn-primary rounded-pill">
+            <div class="col align-self-center">
+              <button
+                type="submit"
+                class="btn btn-primary rounded-pill float-end"
+              >
                 Follow
               </button>
             </div>
@@ -255,7 +321,7 @@
         </div>
         <div class="list-group-item">
           <div class="row">
-            <div class="image-parent col-xxl-2">
+            <div class="image-parent col-xxl-2 col-xl-2 col-lg-2">
               <img
                 src="../../images/tesla.png"
                 width="50px"
@@ -271,8 +337,11 @@
                 <div class="handle">@Tesla</div>
               </div>
             </div>
-            <div class="col">
-              <button type="submit" class="btn btn-primary rounded-pill">
+            <div class="col align-self-center">
+              <button
+                type="submit"
+                class="btn btn-primary rounded-pill float-end"
+              >
                 Follow
               </button>
             </div>
