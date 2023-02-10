@@ -10,19 +10,27 @@
       rel="stylesheet"
     />
     <link href="index.css" rel="stylesheet" />
+    <link href="challenge-index.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 ps-4 pt-2 pe-0">
-        <div class="list-group">
-          <a class="list-group-item list-group-item-action text-black" href="#">
-            <i class="fab fa-brands fa-twitter wd-twitter-blue"></i>
+        <div class="list-group wd-left-sidebar">
+          <a class="list-group-item list-group-item-action" href="#">
+            <i class="fab fa-brands fa-twitter wd-twitter-blue fa-2x"></i>
           </a>
-          <a class="list-group-item list-group-item-action text-black" href="#">
+          <a
+            class="list-group-item list-group-item-action text-secondary"
+            href="#"
+          >
             <i class="fas fa-home pe-2 float-start"></i>
             <span class="d-none d-xl-block">Home</span>
           </a>
@@ -33,27 +41,45 @@
             <i class="fas fa-hashtag pe-2 float-start"></i>
             <span class="d-none d-xl-block">Explore</span>
           </a>
-          <a class="list-group-item list-group-item-action text-black" href="#">
-            <i class="fas fa-bell pe-2 float-start"></i>
+          <a
+            class="list-group-item list-group-item-action text-secondary"
+            href="#"
+          >
+            <i class="far fa-bell pe-2 float-start"></i>
             <span class="d-none d-xl-block">Notifications</span>
           </a>
-          <a class="list-group-item list-group-item-action text-black" href="#">
-            <i class="fas fa-envelope pe-2 float-start"></i>
+          <a
+            class="list-group-item list-group-item-action text-secondary"
+            href="#"
+          >
+            <i class="far fa-envelope pe-2 float-start"></i>
             <span class="d-none d-xl-block">Messages</span>
           </a>
-          <a class="list-group-item list-group-item-action text-black" href="#">
-            <i class="fas fa-bookmark pe-2 float-start"></i>
+          <a
+            class="list-group-item list-group-item-action text-secondary"
+            href="#"
+          >
+            <i class="far fa-bookmark pe-2 float-start"></i>
             <span class="d-none d-xl-block">Bookmarks</span>
           </a>
-          <a class="list-group-item list-group-item-action text-black" href="#">
+          <a
+            class="list-group-item list-group-item-action text-secondary"
+            href="#"
+          >
             <i class="fas fa-list pe-2 float-start"></i>
             <span class="d-none d-xl-block">Lists</span>
           </a>
-          <a class="list-group-item list-group-item-action text-black" href="#">
-            <i class="fas fa-user pe-2 float-start"></i>
+          <a
+            class="list-group-item list-group-item-action text-secondary"
+            href="#"
+          >
+            <i class="far fa-user pe-2 float-start"></i>
             <span class="d-none d-xl-block">Profile</span>
           </a>
-          <a class="list-group-item list-group-item-action text-black" href="#">
+          <a
+            class="list-group-item list-group-item-action text-secondary"
+            href="#"
+          >
             <i class="fas fa-angles-right pe-2 float-start"></i>
             <span class="d-none d-xl-block">More</span>
           </a>
@@ -61,48 +87,56 @@
         <div class="tuit-button-container d-grid pt-2">
           <button
             type="submit"
-            class="tuit-button btn btn-primary rounded-pill"
+            class="tuit-button btn btn-primary rounded-pill fw-bold"
           >
             Tweet
           </button>
         </div>
       </div>
-      <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-9 col-sm-9 pt-2">
+      <div
+        class="col-xxl-5 col-xl-5 col-lg-6 col-md-9 col-sm-9 pt-2 wd-main-container"
+      >
         <div class="search-bar-container row">
           <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-sm-11">
-            <div class="input-group">
-              <div class="input-group-text wd-rounded-border-left">
+            <div class="input-group ps-2">
+              <div
+                class="input-group-text wd-rounded-border-left wd-bg-twitter border-0"
+              >
                 <i class="fas fa-search"></i>
               </div>
               <input
                 type="text"
-                class="form-control wd-rounded-border-right"
+                class="form-control wd-rounded-border-right form-control-lg wd-bg-twitter border-0"
                 placeholder="Search Twitter"
               />
             </div>
           </div>
-          <div
-            class="col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 align-self-center"
-          >
-            <i class="fas fa-cog fa-2xl"></i>
+          <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1">
+            <i class="bi bi-gear" style="font-size: 2rem"></i>
           </div>
         </div>
         <div class="navbar-container pt-2">
-          <ul class="nav nav-tabs">
+          <ul class="nav nav-tabs justify-content-between">
             <li class="nav-item">
               <a class="nav-link active" href="../for-you.html">For you</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../trending.html">Trending</a>
+              <a class="nav-link text-secondary" href="../trending.html"
+                >Trending</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../news.html">News</a>
+              <a class="nav-link text-secondary" href="../news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../sports.html">Sports</a>
+              <a class="nav-link text-secondary" href="../sports.html"
+                >Sports</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link d-none d-md-block" href="../entertainment.html"
+              <a
+                class="nav-link text-secondary d-none d-md-block"
+                href="../entertainment.html"
                 >Entertainment</a
               >
             </li>
@@ -129,13 +163,10 @@
                     it very easy to build Single Page Applications or SPAs
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ps-0">
-                  <img
-                    src="../../images/react.png"
-                    width="100px"
-                    height="100px"
-                    class="rounded-3 align-self-center h-100 w-100"
-                  />
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                  <div class="float-end">
+                    <i class="fas fa-ellipsis"></i>
+                  </div>
                 </div>
               </div>
             </li>
@@ -151,13 +182,10 @@
                     as well as desktops
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ps-0">
-                  <img
-                    src="../../images/js.png"
-                    width="100px"
-                    height="100px"
-                    class="rounded-3 align-self-center h-100 w-100"
-                  />
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                  <div class="float-end">
+                    <i class="fas fa-ellipsis"></i>
+                  </div>
                 </div>
               </div>
             </li>
@@ -168,13 +196,10 @@
                   <div class="name fw-bold">jQuery</div>
                   <div class="num-tweets text-secondary">123K Tweets</div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ps-0">
-                  <img
-                    src="../../images/jquery.png"
-                    width="100px"
-                    height="100px"
-                    class="rounded-3 align-self-center h-100 w-100"
-                  />
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                  <div class="float-end">
+                    <i class="fas fa-ellipsis"></i>
+                  </div>
                 </div>
               </div>
             </li>
@@ -188,13 +213,10 @@
                   </div>
                   <div class="num-tweets text-secondary">123K Tweets</div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ps-0">
-                  <img
-                    src="../../images/node.png"
-                    width="100px"
-                    height="100px"
-                    class="rounded-3 align-self-center h-100 w-100"
-                  />
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                  <div class="float-end">
+                    <i class="fas fa-ellipsis"></i>
+                  </div>
                 </div>
               </div>
             </li>
@@ -203,9 +225,9 @@
       </div>
 
       <div
-        class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block list-group pt-2 pe-5"
+        class="col-xxl-3 col-xl-3 col-lg-3 rounded-3 d-none d-lg-block list-group wd-right-sidebar pt-2 pe-5"
       >
-        <div class="list-group-item fw-bold">Who to follow</div>
+        <div class="list-group-item fw-bold fs-3">Who to follow</div>
         <div class="list-group-item">
           <div class="row">
             <div class="image-parent col-xxl-2 col-xl-2 col-lg-2">
@@ -221,7 +243,7 @@
                 <div class="fw-bold">
                   Java <i class="fas fa-circle-check"></i>
                 </div>
-                <div class="handle">@Java</div>
+                <div class="handle text-secondary">@Java</div>
               </div>
             </div>
             <div class="col align-self-center">
@@ -250,10 +272,10 @@
                 <div class="fw-bold text-nowrap overflow-visible">
                   Relativity Space <i class="fas fa-circle-check"></i>
                 </div>
-                <div class="handle">@relativityspace</div>
+                <div class="handle text-secondary">@relativityspace</div>
               </div>
             </div>
-            <div class="col align-self-center position">
+            <div class="col align-self-center">
               <button
                 type="submit"
                 class="btn btn-primary rounded-pill float-end"
@@ -278,7 +300,7 @@
                 <div class="fw-bold">
                   Virgin Galactic <i class="fas fa-circle-check"></i>
                 </div>
-                <div class="handle">@virgingalactic</div>
+                <div class="handle text-secondary">@virgingalactic</div>
               </div>
             </div>
             <div class="col align-self-center">
@@ -306,7 +328,7 @@
                 <div class="fw-bold">
                   NASA <i class="fas fa-circle-check"></i>
                 </div>
-                <div class="handle">@NASA</div>
+                <div class="handle text-secondary">@NASA</div>
               </div>
             </div>
             <div class="col align-self-center">
@@ -334,7 +356,7 @@
                 <div class="fw-bold">
                   Tesla <i class="fas fa-circle-check"></i>
                 </div>
-                <div class="handle">@Tesla</div>
+                <div class="handle text-secondary">@Tesla</div>
               </div>
             </div>
             <div class="col align-self-center">
