@@ -15,9 +15,7 @@ const ExploreComponent = () => {
       />
     </div>
   </div>
-  <div
-    class="col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 align-self-center"
-  >
+  <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 align-self-center">
     <i class="fas fa-cog text-primary fa-2xl"></i>
   </div>
 </div>
@@ -42,7 +40,12 @@ const ExploreComponent = () => {
     </li>
   </ul>
 </div>
-
+    <div class="main-poster-container position-relative pt-2">
+        <img src="../../images/poster.jpeg" class="img-fluid h-100 w-100" />
+        <h2 class="left-0 bottom-0 position-absolute text-white">
+        SpaceX's Starship
+        </h2>
+    </div>
     ${PostSummaryList()}
     `;
 };
