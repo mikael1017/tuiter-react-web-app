@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "1",
+    "avatarIcon": "elon.jpeg",
+    "id": "Elon Musk",
+    "handle": "@elonmusk",
+    "time": "23h",
+    "tweet": "Amazing show about <Link to=\"#\">@Inspiration4x</Link> mission!",
+    "postImg": "countdown.jpeg",
+    "imgTitle": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
+    "imgDesc": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
+    "postLink": "<FontAwesomeIcon icon=\"fas fa-link\"></i>netflix.com",
+    "comments": "4.2K",
+    "retweets": "3.5K",
+    "likes": "37.5K"
+  },
+  {
+    "_id": "2",
+    "avatarIcon": "ny.webp",
+    "id": "New York Post",
+    "handle": "@nypost",
+    "time": "23h",
+    "tweet": "Grimes seen reading Karl M arx following split with world's richest man Elon Musk <Link to=\"#\">trib.al/nx2Gfaq</Link>",
+    "postImg": "post2.webp",
+    "imgTitle": "",
+    "imgDesc": "",
+    "postLink": "",
+    "comments": 965,
+    "retweets": "2.4K",
+    "likes": "4K"
+  }
+]

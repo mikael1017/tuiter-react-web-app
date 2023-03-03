@@ -1,12 +1,12 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import WhoToFollowList from "../WhoToFollowList/index.js";
-import ExploreComponent from "../ExploreScreen/ExploreComponents.js";
+import ExploreComponent from "./ExploreComponents.js";
 
 function exploreComponent() {
   $("#wd-explore").append(`
    <div class="row mt-2">
     <div class="col-2 col-md-2 col-lg-1 col-xl-2 ">
-     ${NavigationSidebar('explore')}
+     ${NavigationSidebar("explore")}
     </div>
     <div class="col-10 col-lg-7 col-xl-6 ">
     <div class="recent-post-container">
