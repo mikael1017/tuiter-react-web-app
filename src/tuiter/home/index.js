@@ -1,6 +1,7 @@
 import React from "react";
 import PostItem from "./postItem";
 import postArray from "./posts.json";
+import "./index.css";
 
 const HomeComponent = () => {
   return (

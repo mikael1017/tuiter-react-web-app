@@ -8,6 +8,7 @@ import {
   faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import "./index.css";
 
 const PostItem = ({
   post = {
@@ -32,6 +33,7 @@ const PostItem = ({
     <div className="row px-2 border-top border-secondary py-2">
       <div className=" col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1">
         <img
+          alt=""
           src={`/images/${post.avatarIcon}`}
           className="rounded-circle"
           height="50px"
@@ -46,12 +48,13 @@ const PostItem = ({
               {post.handle} - {post.time}
             </span>
           </div>
-          <div className="">{post.tweet}</div>
+          <div dangerouslySetInnerHTML={{ __html: post.tweet }} />
           <div className="image-container">
             <img
+              alt=""
               className="border border-secondary rounded-top"
               src={`/images/${post.postImg}`}
-              width="462.66px"
+              width="512.66px"
               height="264px"
             />
           </div>
@@ -59,6 +62,7 @@ const PostItem = ({
             <div className="img-title">{post.imgTitle}</div>
             <div className="img-info text-secondary">{post.imgDesc}</div>
             <div className="img-link text-secondary">{post.postLink}</div>
+            <div dangerouslySetInnerHTML={{ __html: post.postLink }} />
           </div>
         </div>
         <div className="action-row d-flex justify-content-between mt-2">
