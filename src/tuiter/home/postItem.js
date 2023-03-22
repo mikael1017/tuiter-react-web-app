@@ -13,7 +13,7 @@ import "./index.css";
 const PostItem = ({
   post = {
     _id: "1",
-    avatarIcon: "elon.jpeg",
+    avatarIcon: "spacex.jpeg",
     id: "Elon Musk",
     handle: "@elonmusk",
     time: "23h",
