@@ -1,21 +1,10 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
-const ProfileComponent = ({
-  profile = {
-    name: "Manchester United",
-    handle: "@jaegba",
-    profilePicture: "muprofile.jpeg",
-    bannerPicture: "banner.jpeg",
-    bio: "One of the most popular and successful football (soccer) clubs in the world. The club is based in Manchester, England, and was founded in 1878 as Newton Heath LYR Football Club. The club was later renamed Manchester United in 1902.",
-    website: "youtube.com/webdevtv",
-    location: "Boston, MA",
-    dateOfBirth: "7/7/1968",
-    dateJoined: "4/2009",
-    followingCount: 23,
-    followersCount: "3.4m",
-  },
-}) => {
+const ProfileComponent = () => {
+  const profile = useSelector((state) => state.profile);
+  console.log(profile);
   return (
     <>
       <div className="wd-navbar-container row">
@@ -50,7 +39,7 @@ const ProfileComponent = ({
           <div className="col"></div>
           <div className="col mt-2">
             <Link to="/tuiter/edit-profile">
-              <button className="btn btn-outline-secondary rounded-pill">
+              <button className="btn btn-outline-secondary rounded-pill float-end">
                 <b>Edit profile</b>
               </button>
             </Link>

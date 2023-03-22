@@ -1,12 +1,12 @@
 import React from "react";
-const WhoToFollowListItem = ({
-  who = { userName: "NASA", handle: "NASA", avatarIcon: "nasa.jpeg" },
-}) => {
+
+const WhoToFollowListItem = ({ who }) => {
   return (
     <li className="list-group-item">
       <div className="row">
         <div className="col-2">
           <img
+            alt=""
             className="rounded-circle"
             height={48}
             width={48}

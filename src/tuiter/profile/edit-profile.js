@@ -1,81 +1,142 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { updateProfile } from "../reducers/profile-reducer";
 
-const EditProfile = ({
-  profile = {
-    name: "Manchester United",
-    handle: "@jaegba",
-    profilePicture: "muprofile.png",
-    bannerPicture: "banner.jpeg",
-    bio: "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
-    website: "youtube.com/webdevtv",
-    location: "Boston, MA",
-    dateOfBirth: "7/7/1968",
-    dateJoined: "4/2009",
-    followingCount: 340,
-    followersCount: 223,
-  },
-}) => {
+const EditProfile = () => {
+  const profile = useSelector((state) => state.profile);
+  const dispatch = useDispatch();
+  const [name, setName] = useState(profile.name);
+  const [bio, setBio] = useState(profile.bio);
+  const [location, setLocation] = useState(profile.location);
+  const [website, setWebsite] = useState(profile.website);
+  const [birthDate, setBirthDate] = useState(profile.dateOfBirth);
+
+  const saveHandler = (newProfile) => {
+    dispatch(
+      updateProfile({
+        ...profile,
+        name: name,
+        bio: bio,
+        location: location,
+        website: website,
+        dateOfBirth: birthDate,
+      })
+    );
+  };
   return (
     <>
-      <div className="wd-navbar-container row">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          className="col-2"
-        >
-          <i class="bi bi-arrow-left"></i>
+      <div
+        className="wd-navbar row align-middle"
+        style={{
+          alignItem: "center",
+        }}
+      >
+        <div className="col-1">
+          <Link to="/tuiter/profile">
+            <i class="bi bi-x-lg"></i>
+          </Link>
         </div>
-        <div className="col-10">
-          <h4 className="row">{profile.name}</h4>
-          <div className="row">6,144 Tweets</div>
+        <div className="col-9">
+          <p>
+            <b>Edit profile</b>
+          </p>
+        </div>
+        <div className="col-1">
+          {/* gotta change this so that handle onclick then change  back to profile page */}
+          <Link to="/tuiter/profile">
+            <button
+              onClick={saveHandler}
+              className="btn btn-dark rounded-pill btn-sm"
+            >
+              Save
+            </button>
+          </Link>
         </div>
       </div>
-      <div className="wd-profile-container row">
+      <div className="wd-banner row">
         <div className="row">
           <img alt="" src={`/images/${profile.bannerPicture}`} />
         </div>
+      </div>
+      <div className="wd-profile-pic row">
         <div
-          className="row"
           style={{
-            display: "flex",
-            justifyContent: "space-around",
+            margin: "-60px 0px 5px 20px",
           }}
         >
-          <div className="col">profile pic</div>
-          <div className="col"></div>
-          <div className="col"></div>
-          <div className="col">Edit profile button</div>
+          <img
+            alt=""
+            src={`/images/${profile.profilePicture}`}
+            className="rounded-circle"
+            height={150}
+            width={150}
+          />
         </div>
       </div>
-      <div className="wd-name-container row">
-        <div className="row">
-          <h4 className="font-heading text-lg">{profile.name}</h4>
-        </div>
-        <div className="row">{profile.handle}</div>
+      <div className="name-container form-floating my-4">
+        <textarea
+          className="form-control"
+          id="nameForm"
+          style={{
+            height: "70px",
+          }}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        ></textarea>
+        <label for="nameForm">Name</label>
       </div>
-      <div className="bio-container row">
-        <p>{profile.bio}</p>
+      <div className="bio-container form-floating my-4">
+        <textarea
+          className="form-control"
+          id="bioForm"
+          style={{
+            height: "100px",
+          }}
+          value={bio}
+          onChange={(e) => setBio(e.target.value)}
+        ></textarea>
+        <label for="bioForm">Bio</label>
       </div>
-      <div className="add-info-container row">
-        <div className="col">{profile.location}</div>
-        <div className="col">{profile.dateOfBirth}</div>
-        <div className="col">{profile.dateJoined}</div>
+      <div className="location-container form-floating my-4">
+        <textarea
+          className="form-control"
+          id="locationForm"
+          style={{
+            height: "70px",
+          }}
+          value={location}
+          onChange={(e) => setLocation(e.target.value)}
+        ></textarea>
+        <label for="locationForm">Location</label>
       </div>
-      <div
-        className="follow-stats-container row"
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-        }}
-      >
-        <div className="col">{profile.followingCount} Following</div>
-        <div className="col">{profile.followersCount} Followers</div>
-        <div className="col"></div>
-        <div className="col"></div>
+      <div className="website-container form-floating my-4">
+        <textarea
+          className="form-control"
+          id="websiteForm"
+          rows="2"
+          style={{
+            height: "70px",
+          }}
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
+        ></textarea>
+        <label for="websiteForm">Website</label>
       </div>
+      <div className="dob-container form-floating my-4">
+        <textarea
+          className="form-control"
+          id="websiteForm"
+          rows="2"
+          style={{
+            height: "70px",
+          }}
+          value={birthDate}
+          onChange={(e) => setBirthDate(e.target.value)}
+        ></textarea>
+        <label for="websiteForm">Birth Date (mm/dd/yyyy)</label>
+      </div>
+      <div>Switch to professional</div>
     </>
   );
 };
