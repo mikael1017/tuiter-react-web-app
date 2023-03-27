@@ -4,11 +4,12 @@ import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import TuitStats from "./TuitStats";
 import { deleteTuit } from "./tuits-reducer";
 import { useDispatch } from "react-redux";
+import { deleteTuitThunk } from "../../services/tuits-thunk";
 
 const TuitItem = ({ tuit }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
   return (
     <li className="list-group-item">
