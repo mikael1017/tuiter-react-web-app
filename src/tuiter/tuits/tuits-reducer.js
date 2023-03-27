@@ -12,22 +12,6 @@ const initialState = {
   loading: false,
 };
 
-// const currentUser = {
-//   userName: "NASA",
-//   handle: "@nasa",
-//   image: "nasa.png",
-// };
-
-// const templateTuit = {
-//   ...currentUser,
-//   topic: "Space",
-//   time: "2h",
-//   liked: false,
-//   replies: 0,
-//   retuits: 0,
-//   likes: 0,
-// };
-
 const tuitsSlice = createSlice({
   name: "tuits",
   initialState,
@@ -46,6 +30,7 @@ const tuitsSlice = createSlice({
     },
     [deleteTuitThunk.fulfilled]: (state, { payload }) => {
       state.loading = false;
+      console.log(payload);
       state.tuits = state.tuits.filter((t) => t._id !== payload);
     },
     [createTuitThunk.fulfilled]: (state, { payload }) => {
@@ -55,10 +40,9 @@ const tuitsSlice = createSlice({
     [updateTuitThunk.fulfilled]: (state, { payload }) => {
       state.loading = false;
       console.log(state.tuits);
-      console.log(payload);
-      const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id);
+      const tuitNdx = state.tuits.findIndex((t) => t._id === payload);
       state.tuits[tuitNdx] = {
-        ...state.tutis[tuitNdx],
+        ...state.tuits[tuitNdx],
         ...payload,
       };
     },
