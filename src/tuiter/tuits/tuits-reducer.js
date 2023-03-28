@@ -40,11 +40,13 @@ const tuitsSlice = createSlice({
     [updateTuitThunk.fulfilled]: (state, { payload }) => {
       state.loading = false;
       console.log(state.tuits);
-      const tuitNdx = state.tuits.findIndex((t) => t._id === payload);
+      console.log("payload is " + payload);
+      const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id);
       state.tuits[tuitNdx] = {
         ...state.tuits[tuitNdx],
         ...payload,
       };
+      console.log(state.tuits[tuitNdx].likes);
     },
   },
   reducers: {},

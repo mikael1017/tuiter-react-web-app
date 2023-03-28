@@ -10,6 +10,7 @@ const TuitItem = ({ tuit }) => {
   const deleteTuitHandler = (id) => {
     dispatch(deleteTuitThunk(id));
   };
+  // console.log("from TuitItem " + tuit._id);
   return (
     <li className="list-group-item">
       <div className="row px-2 py-2">

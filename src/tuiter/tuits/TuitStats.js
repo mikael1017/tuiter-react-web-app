@@ -18,13 +18,21 @@ import { useDispatch } from "react-redux";
 const TuitStats = ({ tuit }) => {
   const dispatch = useDispatch();
 
-  const updateHandler = (tuit) => {
+  const updateLikeHandler = () => {
     const newTuit = {
       ...tuit,
       likes: tuit.likes + 1,
       liked: !tuit.liked,
     };
-    console.log(newTuit);
+    dispatch(updateTuitThunk(newTuit));
+  };
+
+  const updateDislikeHandler = () => {
+    const newTuit = {
+      ...tuit,
+      dislikes: tuit.dislikes + 1,
+      disliked: !tuit.disliked,
+    };
     dispatch(updateTuitThunk(newTuit));
   };
   return (
@@ -44,15 +52,14 @@ const TuitStats = ({ tuit }) => {
       </div>
 
       <div>
-        Likes: {tuit.likes}
         <Link className="text-secondary" to="#">
           <FontAwesomeIcon
             style={tuit.liked ? { color: "red" } : ""}
             icon={tuit.liked ? fasHeart : faHeart}
-            onClick={() => updateHandler(tuit)}
+            onClick={() => updateLikeHandler()}
           />
         </Link>
-        {/* <span className="wd-num">{tuit.likes}</span> */}
+        <span className="wd-num">{" " + tuit.likes}</span>
       </div>
 
       <div>
@@ -65,18 +72,10 @@ const TuitStats = ({ tuit }) => {
           <FontAwesomeIcon
             style={tuit.disliked ? { color: "red" } : ""}
             icon={tuit.disliked ? fasThumbsDown : faThumbsDown}
-            onClick={() =>
-              dispatch(
-                updateTuitThunk({
-                  ...tuit,
-                  dislikes: tuit.dislikes + 1,
-                  disliked: !tuit.disliked,
-                })
-              )
-            }
+            onClick={() => updateDislikeHandler()}
           />
         </Link>
-        <span className="wd-num">{tuit.dislikes}</span>
+        <span className="wd-num">{" " + tuit.dislikes}</span>
       </div>
     </div>
   );
