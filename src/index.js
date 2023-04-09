@@ -9,17 +9,8 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const store = configureStore({
-  reducer: {
-    isLoggedIn: loggedInReducer,
-    user: userReducer,
-  },
-});
-root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
-);
+
+root.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
