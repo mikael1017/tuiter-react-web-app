@@ -1,3 +1,4 @@
 {
-    "workbench.colorCustomizations": {}
+    "prettier.useTabs": true,
+    "prettier.tabWidth": 4
 }
